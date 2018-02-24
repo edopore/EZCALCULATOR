@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EZCALCULATOR</string>
+    <string name="error">No es posible dividir :c</string>
+    <string name="Borra">Datos Eliminados</string>
+    <string name="error1">Error :c</string>
+    <string name="ing">Por favor ingrese un número seguido de un operando</string>
+    <string name="ing2">Por favor ingrese un operando</string>
+</resources>
