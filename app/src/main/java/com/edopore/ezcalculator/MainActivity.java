@@ -1,5 +1,3 @@
-//Revisar error al presionar vacio
-
 package com.edopore.ezcalculator;
 
 import android.os.Bundle;
@@ -123,15 +121,27 @@ public class MainActivity extends AppCompatActivity {
                     switch (op) {
                         case 1:
                             suma = n1 + n2;
-                            E1.setText(String.valueOf(suma));
+                            if (suma % 1 == 0) {
+                                E1.setText(String.valueOf((int) suma));
+                            } else {
+                                E1.setText(String.valueOf(suma));
+                            }
                             break;
                         case 2:
                             resta = n1 - n2;
-                            E1.setText(String.valueOf(resta));
+                            if (resta % 1 == 0) {
+                                E1.setText(String.valueOf((int) resta));
+                            } else {
+                                E1.setText(String.valueOf(resta));
+                            }
                             break;
                         case 3:
                             mult = n1 * n2;
-                            E1.setText(String.valueOf(mult));
+                            if (mult % 1 == 0) {
+                                E1.setText(String.valueOf((int) mult));
+                            } else {
+                                E1.setText(String.valueOf(mult));
+                            }
                             break;
                         case 4:
                             if (n2 == 0) {
@@ -139,7 +149,11 @@ public class MainActivity extends AppCompatActivity {
                                 E1.setText(R.string.error1);
                             } else {
                                 divi = n1 / n2;
-                                E1.setText(String.valueOf(divi));
+                                if (divi % 1 == 0) {
+                                    E1.setText(String.valueOf((int) divi));
+                                } else {
+                                    E1.setText(String.valueOf(divi));
+                                }
                             }
                             break;
                     }
